@@ -125,6 +125,7 @@ body {
 
 .box p {
     font-size: 18px;
+    color: white;
 }
 
 
@@ -136,7 +137,7 @@ body {
 }
 
 .info h2 {
-    color: v#7a1dd8;
+    
     font-size: 32px;
 }
 
