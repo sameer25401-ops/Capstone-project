@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitMorph Login</title>
+    <style>
+        body {
+            background: #f7fafc;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            max-width: 350px;
+            margin: 80px auto;
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #373f51;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 16px;
+            border: 1px solid #dce1e6;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-btn {
+            background: #3849a2;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .login-btn:hover {
+            background: #2c3576;
+        }
+        .links {
+            text-align: center;
+            margin-top: 18px;
+        }
+        .links a {
+            color: #3849a2;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>BitMorph Login</h2>
+        <form action="/login" method="post">
+            <input class="input-field" type="text" name="username" placeholder="Username" required>
+            <input class="input-field" type="password" name="password" placeholder="Password" required>
+            <button class="login-btn" type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="/forgot-password">Forgot Password?</a>
+            <a href="/register">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
