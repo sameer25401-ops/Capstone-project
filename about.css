@@ -41,15 +41,7 @@
 }
 
 
-.logo::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 5px;
-    height: 80%;
-    border-radius: 3px;
-}
+
 
 
 .nav-links{
@@ -71,7 +63,7 @@
     color: #4b61ff;
 }
 .active{
-    color: #4b61ff !important;
+    color: #4b61ff ;
 }
 
 
@@ -79,7 +71,7 @@
     background: #4b61ff;
     padding: 8px 18px;
     border-radius: 8px;
-    color: white !important;
+    color: white ;
 }
 
 
