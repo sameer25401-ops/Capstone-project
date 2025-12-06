@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: #f5f7fb;
+    color: #1a1a1a;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    background: rgba(152, 158, 241, 0.12);
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(13, 1, 21, 0.25);
+}
+
+.logo span{
+    color: #4b61ff;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.active{
+    color: #4b61ff !important;
+}
+
+.btn{
+    background: #4b61ff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: white !important;
+}
+
+
+.page-header{
+    text-align: center;
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.page-header h1{
+    color: #4b61ff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.page-header p{
+    margin-top: 12px;
+    color: #555;
+    font-size: 16px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.price-table-section{
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.price-table{
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+    border: 1px solid #e5e9f0;
+}
+
+
+.price-table thead{
+    background: #eef2ff;
+}
+
+.price-table th{
+    padding: 16px;
+    text-align: left;
+    color: #4b61ff;
+    font-size: 18px;
+}
+
+
+.price-table td{
+    padding: 18px;
+    border-bottom: 1px solid #e5e9f0;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.coin{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coin img{
+    width: 35px;
+}
+
+.coin span{
+    font-size: 14px;
+    color: #777;
+    margin-left: 5px;
+}
+
+
+.green{
+    color: #0fa958;
+    font-weight: 600;
+}
+
+.red{
+    color: #e63946;
+    font-weight: 600;
+}
+
+
+.price-table tbody tr:hover{
+    background: #f1f4ff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+@media (max-width: 880px){
+
+    .navbar{
+        padding: 20px 30px;
+    }
+
+    .price-table-section{
+        padding: 20px;
+    }
+
+    .price-table{
+        font-size: 14px;
+    }
+
+    .coin img{
+        width: 28px;
+    }
+}
